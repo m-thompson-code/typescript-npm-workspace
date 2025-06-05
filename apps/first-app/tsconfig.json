@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo",// <-- defaults to root, but should be included with dist
+    "module": "NodeNext",
+    "target": "ES2020",
+    "esModuleInterop": true,
+  },
+  "include": [
+    "src",
+  ],
+  "references": [
+    {
+      "path": "../../libs/shared"
+    }
+  ],
+}

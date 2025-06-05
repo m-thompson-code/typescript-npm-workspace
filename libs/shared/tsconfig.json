@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "composite": true,// <-- Required for referencing this tsconfig in other packages
+    "outDir": "dist",
+    "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo",// <-- defaults to root, but should be included with dist
+    "rootDir": "src",
+    "module": "NodeNext",
+    "target": "ES2020",
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext",// <-- required for "customConditions"
+    "customConditions": ["development"]// <-- needed for important path to work based on package.json export having "development"
+  },
+  "include": [
+    "src",
+  ],
+}

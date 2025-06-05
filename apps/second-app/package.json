@@ -1,0 +1,10 @@
+{
+    "name": "@example/second-app",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "dev": "npm run build -w ../../libs/shared && ts-node src/index",
+        "build": "npm run build -w ../../libs/shared && rimraf dist && tsc",
+        "prod": "npm run build && node dist/index.js"
+    }
+}
